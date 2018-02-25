@@ -22,7 +22,7 @@ validate(form);
 
 Generated schema example:
 ```
-// Validator will pass a form to schema creator
+// Validator will pass a form to schema func
 export default form => ({
   type: 'object',
   properties: {
