@@ -20,7 +20,7 @@ validate(form);
 2. Schema can be generated
 3. Schema is extended with `messages` prop for each property.
 
-Generated schema example:
+Example of generated schema:
 ```
 // Validator will pass a form to schema func
 export default form => ({
