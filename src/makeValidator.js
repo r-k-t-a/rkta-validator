@@ -15,7 +15,7 @@ export default (schema, options) =>
       useDefaults: true,
       v5: true,
     };
-    const ajv = Ajv({ ...defaultOptions, ...options });
+    const ajv = new Ajv({ ...defaultOptions, ...options });
     keywords(ajv);
     const schemaAsObject = typeof schema === 'function'
       ? schema(form, inputName, prevErrors)
