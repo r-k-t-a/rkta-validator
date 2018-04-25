@@ -1,4 +1,5 @@
 import Ajv from 'ajv';
+import keywords from 'ajv-keywords';
 
 import humanizeErrors from './humanizeErrors';
 import omitEmpty from './omitEmpty';
@@ -15,6 +16,7 @@ export default (schema, options) =>
       v5: true,
     };
     const ajv = Ajv({ ...defaultOptions, ...options });
+    keywords(ajv);
     const schemaAsObject = typeof schema === 'function'
       ? schema(form, inputName, prevErrors)
       : schema;

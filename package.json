@@ -1,6 +1,6 @@
 {
   "name": "rkta-validator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JSON schema validator factory for rkta-form.",
   "main": "./lib/index.js",
   "scripts": {
@@ -51,7 +51,8 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "ajv": "^6.1.1",
+    "ajv": "^6.4.0",
+    "ajv-keywords": "^3.1.0",
     "lodash.omitby": "^4.6.0"
   }
 }
