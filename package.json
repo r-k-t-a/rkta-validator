@@ -48,7 +48,7 @@
     "eslint-plugin-react": "^7.6.1",
     "istanbul": "^1.1.0-alpha.1",
     "mocha": "^6.2.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.0"
   },
   "dependencies": {
     "ajv": "^6.4.0",
